@@ -1,5 +1,4 @@
 import 'package:ez_math/gameLogic.dart';
-import 'package:ez_math/generateQuest.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -27,25 +26,20 @@ class EzMath extends StatefulWidget {
 }
 
 class _EzMathState extends State<EzMath> {
-
   void setStateAnswer(String num) {
     setState(() {
-
-      if(int.parse(num) == 11){
+      if (int.parse(num) == 11) {
         str = str.substring(0, str.length - 1);
-      }
-      else {
+      } else {
         str += num;
 
-        if(int.parse(str) == answer) {
+        if (int.parse(str) == answer) {
           newQuest();
           str = "";
         }
-
       }
     });
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +57,6 @@ class _EzMathState extends State<EzMath> {
               style: TextStyle(fontSize: 76, fontFamily: "Quantico"),
             ),
           ),
-
           Container(
             alignment: Alignment.center,
             padding: EdgeInsets.fromLTRB(10, 20, 20, 0),
@@ -72,8 +65,6 @@ class _EzMathState extends State<EzMath> {
               style: TextStyle(fontSize: 48, fontFamily: "Quantico"),
             ),
           ),
-
-
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -175,8 +166,6 @@ class _EzMathState extends State<EzMath> {
             children: <Widget>[
               FlatButton(
                   onPressed: () {
-
-
                     setStateAnswer("1");
                   },
                   child: new Text("stp",
