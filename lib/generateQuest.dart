@@ -1,7 +1,6 @@
 import 'dart:math';
 
 var _random = new Random();
-String str = "5";
 
 
 List<int> generateSumTask(int min, int max) {
