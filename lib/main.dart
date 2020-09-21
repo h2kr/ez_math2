@@ -195,7 +195,7 @@ class _EzMathState extends State<EzMath> {
                           fontFamily: "Quantico"))),
               FlatButton(
                   onPressed: () {
-                    setStateAnswer("11");
+                    setStateAnswer("");
                   },
                   child: new Text("del",
                       style: new TextStyle(
